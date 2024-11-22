@@ -1,3 +1,3 @@
 library flow_canvas;
 
-export 'base_canvas.dart';
+export 'basic_flow_canvas.dart' show BasicFlowCanvas;
