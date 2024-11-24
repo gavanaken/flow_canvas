@@ -51,14 +51,12 @@ class _CanvasExampleAppState extends State<CanvasExampleApp> {
                       child: const Icon(Icons.add),
                       onPressed: () {
                         setState(() {
-                          childNodes.add(Card(
+                          childNodes.add(Container(
                             key: Key(const Uuid().v4().toString()),
-                            child: Container(
-                              decoration:
-                                  BoxDecoration(color: generateRandomColor()),
-                              width: 100,
-                              height: 100,
-                            ),
+                            decoration:
+                                BoxDecoration(color: generateRandomColor()),
+                            width: 100,
+                            height: 100,
                           ));
                         });
                       },
